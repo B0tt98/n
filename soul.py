@@ -138,8 +138,7 @@ def restart(update: Update, context: CallbackContext) -> None:
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 def main():
-
-    updater = Updater("8056007192:AAH4zHYf5Lgx-_OW7HzrfuE5ZBuhzdH0h3M", use_context=True)
+    updater = Updater("8056007192:AAH4zHYf5Lgx-_OW7HzrfuE5ZBuhzdH0h3M")  # Use your token
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
