@@ -3,7 +3,8 @@ import subprocess
 import threading
 import json
 from datetime import datetime, timedelta
-from telegram import Update, ParseMode
+from telegram import Update
+from telegram.constants import ParseMode
 from telegram.ext import Updater, CommandHandler, CallbackContext
 
 admins = [6965153309]
